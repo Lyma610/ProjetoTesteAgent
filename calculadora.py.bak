@@ -1,25 +1,20 @@
 def somar(a, b):
     return a + b
 
-
 def subtrair(a, b):
     return a - b
 
-
 def multiplicar(a, b):
     return a * b
-
 
 def dividir(a, b):
     # BUG: não verifica divisão por zero
     return a / b
 
-
 def calcular_media(numeros):
-    # Corrigido: usa len(numeros) corretamente
+    # BUG: usa len() errado — deveria ser len(numeros), mas usa uma variável inexistente
     total = sum(numeros)
-    return total / len(numeros)
-
+    return total / len
 
 if __name__ == "__main__":
     print("=== Calculadora ===")
