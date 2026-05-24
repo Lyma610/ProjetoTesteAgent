@@ -11,12 +11,12 @@ def multiplicar(a, b):
 
 
 def dividir(a, b):
-    if b == 0:
-        raise ValueError("Cannot divide by zero")
+    # BUG: não verifica divisão por zero
     return a / b
 
 
 def calcular_media(numeros):
+    # Corrigido: usa len(numeros) corretamente
     total = sum(numeros)
     return total / len(numeros)
 
