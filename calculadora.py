@@ -3,8 +3,8 @@ def somar(a, b):
 
 
 def subtrair(a, b):
-    # BUG: implementação incorreta de subtração
-    return a + b
+    # Corrigido: implementação correta de subtração
+    return a - b
 
 
 def multiplicar(a, b):
