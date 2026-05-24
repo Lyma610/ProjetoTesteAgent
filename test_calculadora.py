@@ -18,8 +18,8 @@ class TestCalculadora(unittest.TestCase):
         self.assertEqual(dividir(20, 4), 5.0)
 
     def test_dividir_por_zero(self):
-        # Espera que seja tratado, mas a função não trata — vai lançar ZeroDivisionError
-        with self.assertRaises(ZeroDivisionError):
+        # Corrigido: agora deve passar
+        with self.assertRaises(ValueError):
             dividir(10, 0)
 
     def test_calcular_media(self):
