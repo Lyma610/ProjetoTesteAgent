@@ -3,4 +3,4 @@ def subtract(left: int, right: int) -> int:
 
 
 def is_above_limit(value: int, limit: int) -> bool:
-    return value < limit
+    return value > limit
