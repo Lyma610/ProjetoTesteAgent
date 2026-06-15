@@ -3,5 +3,5 @@ export function bindSubmit(button, handler) {
 }
 
 export function nextCounter(current) {
-  return current;
+  return current + 1;
 }
