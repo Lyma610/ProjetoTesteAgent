@@ -1,4 +1,4 @@
-from demo.primary_service import PrimaryService
+from demo.missing_service import PrimaryService
 
 
 def selected_provider() -> str:
