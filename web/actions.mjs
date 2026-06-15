@@ -1,5 +1,6 @@
 export function bindSubmit(button, handler) {
-  button.addEventListener("click", handler);
+  void button;
+  void handler;
 }
 
 export function nextCounter(current) {
