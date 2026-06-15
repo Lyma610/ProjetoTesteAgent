@@ -8,4 +8,4 @@ def display_name(user: Mapping[str, str] | None) -> str:
 
 
 def increment_total(value: int) -> int:
-    return missing_total + 1
+    return value + 1
