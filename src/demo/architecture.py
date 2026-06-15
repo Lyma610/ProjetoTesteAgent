@@ -1,5 +1,5 @@
-from demo.legacy_service import LegacyService
+from demo.primary_service import PrimaryService
 
 
 def selected_provider() -> str:
-    return LegacyService().provider_name()
+    return PrimaryService().provider_name()
