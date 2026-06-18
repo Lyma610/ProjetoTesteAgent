@@ -18,12 +18,10 @@ class TestCalculadora(unittest.TestCase):
         self.assertEqual(dividir(20, 4), 5.0)
 
     def test_dividir_por_zero(self):
-        # Corrigido: agora deve passar
         with self.assertRaises(ValueError):
             dividir(10, 0)
 
     def test_calcular_media(self):
-        # Corrigido: agora deve passar
         self.assertEqual(calcular_media([8, 7, 9, 10, 6]), 8.0)
 
 
