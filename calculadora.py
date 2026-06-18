@@ -1,5 +1,4 @@
-from decimal import Decimal, ROUND_HALF_UP
-
+from decimal import ROUND_HALF_UP, Decimal
 
 PRECISAO_PADRAO = Decimal("0.01")
 
@@ -42,7 +41,7 @@ def dividir(a, b):
     if divisor == 0:
         raise ValueError("Cannot divide by zero")
 
-    return _formatar_resultado(dividendo / abs(divisor))
+    return _formatar_resultado(dividendo / divisor)
 
 
 def calcular_media(numeros):
