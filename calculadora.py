@@ -1,5 +1,4 @@
-from decimal import Decimal, ROUND_HALF_UP
-
+from decimal import ROUND_HALF_UP, Decimal
 
 PRECISAO_PADRAO = Decimal("0.01")
 
@@ -46,21 +45,7 @@ def dividir(a, b):
 
 
 def calcular_media(numeros):
-    valores = []
-    lancamentos_processados = set()
-
-    for numero in numeros:
-        valor = _converter_numero(numero)
-
-        if not valor:
-            continue
-
-        chave = valor.quantize(PRECISAO_PADRAO, rounding=ROUND_HALF_UP)
-        if chave in lancamentos_processados:
-            continue
-
-        lancamentos_processados.add(chave)
-        valores.append(valor)
+    valores = [_converter_numero(numero) for numero in numeros]
 
     if not valores:
         return 0
