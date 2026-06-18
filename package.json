@@ -1,0 +1,8 @@
+{
+  "name": "projeto-teste-agent",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test web/actions.test.mjs"
+  }
+}
