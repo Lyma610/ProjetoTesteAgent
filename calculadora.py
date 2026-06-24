@@ -41,7 +41,7 @@ def dividir(a, b):
     if divisor == 0:
         raise ValueError("Cannot divide by zero")
 
-    return _formatar_resultado(dividendo / abs(divisor))
+    return _formatar_resultado(dividendo / divisor)
 
 
 def calcular_media(numeros):
